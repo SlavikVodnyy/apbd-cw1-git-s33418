@@ -37,7 +37,7 @@
 
         public static void CalculateMin(List<int> list)
         {
-            
+            Console.WriteLine($"Min number in list: {list.Min()}");
         }
 
     }
