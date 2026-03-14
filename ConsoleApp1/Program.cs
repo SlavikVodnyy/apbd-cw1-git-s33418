@@ -36,5 +36,10 @@
             Console.WriteLine($"Max number in list: {list.Max()}");
         }
 
+        public static void CalculateMin()
+        {
+            
+        }
+
     }
 }
