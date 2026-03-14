@@ -6,18 +6,25 @@
         {
             Console.WriteLine("Hello, World!");
             List<int> list = new() { 1, 2, 3, 4, 5, 6 };
+            int[] custom = new int[5];
             Console.WriteLine(list.Where(x => x % 2 == 0).Sum());
             Console.WriteLine("Enter 2 numbers: ");
             int number1 = int.Parse(Console.ReadLine());
             int number2 = int.Parse(Console.ReadLine());
             Console.WriteLine(number1 * number2);
-            Avg(list);
+            Avg(list, custom);
 
         }
 
-        public static void Avg(List<int> list)
+        public static void Avg(List<int> list, int[] custom)
         {
-            Console.WriteLine(list.Average());
+            Console.WriteLine(custom.Average());
+            for (int i = 0; i < custom.Length; i++)
+            {
+                Console.WriteLine($"Write {i + 1} number: ");
+                custom[i] = int.Parse(Console.ReadLine());
+            }
+            Console.WriteLine(custom.Average());
         }
 
     }
