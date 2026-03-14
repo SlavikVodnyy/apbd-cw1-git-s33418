@@ -11,20 +11,22 @@
             Console.WriteLine("Enter 2 numbers: ");
             int number1 = int.Parse(Console.ReadLine());
             int number2 = int.Parse(Console.ReadLine());
-            Console.WriteLine(number1 * number2);
+            int mulRes = number1 * number2;
+            float divRes = number1 / number2;
+            Console.WriteLine($"Multiplication result: {mulRes}, Division result: {divRes}");
             Avg(list, custom);
 
         }
 
         public static void Avg(List<int> list, int[] custom)
         {
-            Console.WriteLine(custom.Average());
+            Console.WriteLine($"List average: {list.Average()}");
             for (int i = 0; i < custom.Length; i++)
             {
                 Console.WriteLine($"Write {i + 1} number: ");
                 custom[i] = int.Parse(Console.ReadLine());
             }
-            Console.WriteLine(custom.Average());
+            Console.WriteLine($"Your's array average: {custom.Average()}");
         }
 
     }
