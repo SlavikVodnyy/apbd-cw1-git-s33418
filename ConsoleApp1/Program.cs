@@ -15,6 +15,7 @@
             float divRes = number1 / number2;
             Console.WriteLine($"Multiplication result: {mulRes}, Division result: {divRes}");
             Avg(list, custom);
+            CalculateMax(list);
 
         }
 
@@ -27,6 +28,11 @@
                 custom[i] = int.Parse(Console.ReadLine());
             }
             Console.WriteLine($"Your's array average: {custom.Average()}");
+        }
+
+        public static void CalculateMax(List<int> list)
+        {
+            Console.WriteLine($"Max number in list: {list.Max()}");
         }
 
     }
