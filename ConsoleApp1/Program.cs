@@ -9,10 +9,10 @@
             int[] custom = new int[5];
             Console.WriteLine(list.Where(x => x % 2 == 0).Sum());
             Console.WriteLine("Enter 2 numbers: ");
-            int number1 = int.Parse(Console.ReadLine());
-            int number2 = int.Parse(Console.ReadLine());
-            int mulRes = number1 * number2;
-            float divRes = number1 / number2;
+            int Number1 = int.Parse(Console.ReadLine());
+            int Number2 = int.Parse(Console.ReadLine());
+            int mulRes = Number1 * Number2;
+            float divRes = Number1 / Number2;
             Console.WriteLine($"Multiplication result: {mulRes}, Division result: {divRes}");
             Avg(list, custom);
             CalculateMax(list);
