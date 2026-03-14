@@ -16,6 +16,7 @@
             Console.WriteLine($"Multiplication result: {mulRes}, Division result: {divRes}");
             Avg(list, custom);
             CalculateMax(list);
+            CalculateMin(list);
 
         }
 
